@@ -9,6 +9,7 @@
     "@babel/plugin-syntax-dynamic-import",
     ["module-resolver", {
       "root": ["./src"]
-    }]
+    }],
+    ["import",{"libraryName":"antd","libraryDirectory":"es","style":"css"}]
   ]
 }

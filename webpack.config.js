@@ -1,18 +1,18 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const autoprefixer = require('autoprefixer');
-const path = require('path');
-const pkg = require('./package.json');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const autoprefixer = require('autoprefixer')
+const path = require('path')
+const pkg = require('./package.json')
 
-const ENV = process.env.NODE_ENV || 'development';
-const ASSET_PATH = process.env.ASSET_PATH || '/';
-const VERSION = `v${pkg.version}`;
-const IS_PROD = ENV === 'production';
+const ENV = process.env.NODE_ENV || 'development'
+const ASSET_PATH = process.env.ASSET_PATH || '/'
+const VERSION = `v${pkg.version}`
+const IS_PROD = ENV === 'production'
 
-const SOURCE_DIR = path.resolve(__dirname, 'src');
-const OUTPUT_DIR = path.resolve(__dirname, 'build');
-const CLIENT_DIR = path.join(OUTPUT_DIR, VERSION);
+const SOURCE_DIR = path.resolve(__dirname, 'src')
+const OUTPUT_DIR = path.resolve(__dirname, 'build')
+const CLIENT_DIR = path.join(OUTPUT_DIR, VERSION)
 
 module.exports = {
   mode: ENV,
@@ -140,4 +140,4 @@ module.exports = {
     contentBase: SOURCE_DIR,
     historyApiFallback: true,
   },
-};
+}
