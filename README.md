@@ -1,17 +1,10 @@
-# React Boilerplate
+
+
+### 2019.1.14
 
 ## Getting Started
 
 ### Development
-
-```bash
-yarn install
-yarn dev
-```
-
-Navigate to `http://localhost:8080`
-
-### 2019.1.14
 
 init
 
@@ -22,3 +15,5 @@ npm install;
 ```bash
 npm run dev
 ```
+
+Navigate to `http://localhost:8080`
